@@ -1,0 +1,15 @@
+def main_4():
+    while True:
+        try:
+            txt = input("Please provide me sentent: ")
+        except:
+            print("that is not a str that is an int")
+        else:
+            if len(txt) < 3:
+                raise Exception(" the len must higher then 3")
+            for i in range(len(txt)):
+                if not txt[i].isalpha():
+                    raise Exception("all chracters must a str only")
+            print("working..")
+            break
+main_4()
