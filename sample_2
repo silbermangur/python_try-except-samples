@@ -1,0 +1,12 @@
+def main_3():
+    while True:
+        try:
+            num = int(input("provide me num: "))
+        except:
+            print("not valid only int")
+        else:
+            if num < 5:
+                raise Exception("must be higher")
+            print("working...")
+            break
+#main_3()
